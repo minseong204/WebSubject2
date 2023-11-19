@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>학회비 납부학생 추가</title>
+</head>
+<body>
+<form action="/account/cid" method="post">
+    학회비 납부학생 추가<br><br>
+    <input style="width: 200px" type="text" name="studentId" placeholder="학번" required /><br>
+    <input style="width: 200px" type="text" name="name" placeholder="이름" required/><br>
+    <input style="width: 200px" type="text" name="grade" placeholder="학년" required/><br>
+    <label for="paymentType">납부 방식 :</label>
+    <select name="paymentType" id="paymentType" required>
+        <option value="full">전체</option>
+        <option value="installment">분할</option>
+    </select><br>
+    학회비 여부 <br><br>
+    <br>
+    <label><input type="checkbox" name="isPaid" placeholder="현 학기 납부 여부">납부했으면 체크</label><br>
+    <br><br>
+
+    <button style="width: 200px" type="submit">추가</button>
+    <br>
+</form>
+</body>
+</html>

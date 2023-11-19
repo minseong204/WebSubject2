@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>학생 정보 추가</title>
+</head>
+<body>
+    <form action="/info/cid" method="post">
+        학생 정보 추가<br><br>
+        <input style="width: 200px" type="text" name="id" placeholder="학번" required /><br>
+        <input style="width: 200px" type="text" name="name" placeholder="이름" required/><br>
+        <input style="width: 200px" type="text" name="grade" placeholder="학년" required/><br>
+
+        학회비 여부 <br><br>
+        <br>
+        <input type="radio" name="payment" value="O" payment />O
+        <input type="radio" name="payment" value="X"/>X
+        <br><br>
+
+        <button style="width: 200px" type="submit">추가</button>
+        <br>
+    </form>
+</body>
+</html>
